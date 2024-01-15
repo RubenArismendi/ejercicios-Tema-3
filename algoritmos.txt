@@ -1,0 +1,47 @@
+1.1. Calcular el promedio de 4 temperaturas medidas en ºC (Celsius) y
+mostrar su equivalente en ºF (Fahrenhei)
+
+ integer t1, t2, t3, t4 ;
+ Leer t1, t2, t3, t4
+ Definir promedio como número real
+ Asignar promedio = (t1 + t2 + t3 + t4) / 4
+ Definir equivalente como número real
+ Asignar equivalente = (promedio * 1.8) + 32
+  escribir("El promedio de las 4 temperaturas es " + promedio + "°C, que es equivalente a " + equivalente + "°F.")
+
+  2.2. Calcular un descuento del 25% para el precio de un curso y
+        mostrarle al usuario cuanto se ahorra y cuanto va a pagar
+
+
+  Algoritmo DescuentoCurso
+    Definir precio, descuento, ahorro, total Como Real
+
+    Escribir "Ingrese el precio del curso:"
+    Leer precio
+
+    descuento <- precio * 0.25
+    ahorro <- precio - descuento
+    total <- precio - ahorro
+
+    Escribir ("El precio original del curso es $", precio)
+    Escribir ("El descuento del 25% es $", descuento)
+    Escribir ("El precio con descuento es $", ahorro)
+    Escribir ("El ahorro es $", total)
+    FinAlgoritmo
+
+    3.3Convertir una cantidad de segundos, suministrados como un valor
+        entero positivo, a minutos y a horas.
+
+    Algoritmo Conversion
+    Definir segundos, minutos, horas Como Entero
+
+    Escribir ("Ingrese la cantidad de segundos:")
+    Leer segundos
+
+    minutos <- segundos / 60
+    horas <- minutos / 60
+    minutos <- minutos % 60
+
+    Escribir ("La cantidad de segundos ingresada es: ", segundos")
+    Escribir "Equivale a: (', horas, " horas, ", minutos, " minutos.')
+    FinAlgoritmo
